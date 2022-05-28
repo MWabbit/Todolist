@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.4'
 
@@ -54,6 +56,8 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 5.1.1'
   gem 'pry-rails', '>= 0.3.9'
   gem 'rspec-rails', '~> 4.0'
+
+  
 end
 
 group :development do
@@ -70,5 +74,7 @@ end
 
 group :production do
   # Use pg as the database for Active Record
-  # gem 'pg', '~> 1.3.1'
+  #gem 'pg', '~> 1.3.1'
+  gem 'pg', '~> 1.2.3'
+  
 end
